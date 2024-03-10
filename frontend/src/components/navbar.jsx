@@ -1,19 +1,17 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { AiOutlineHome, AiOutlineInfoCircle, AiOutlineLogin, AiOutlineUser, AiOutlineUserAdd, AiOutlineUserSwitch, AiOutlineMail } from 'react-icons/ai';
 
 
-const Navbar = () => {
+export function Navbar () {
     return (
     
         
       <nav className="flex flex-row items-center justify-between bg-slate-900 text-white py-4 px-6">
         
         <div className="hidden lg:flex md:flex lg:flex-1 items-center justify-end font-normal space-x-6">
-          <Link to="Home" spy={true} smooth={true} className="hover:bg-slate-800 hover:rounded py-2 px-4 hover:scale-110 ease-in duration-200">
+          <Link to="/" spy={true} smooth={true} className="hover:bg-slate-800 hover:rounded py-2 px-4 hover:scale-110 ease-in duration-200">
             <AiOutlineHome size={20} /> Home
           </Link>
           <Link to="About" spy={true} smooth={true} className="hover:bg-slate-800 hover:rounded py-2 px-4 hover:scale-110 ease-in duration-200">
@@ -41,4 +39,3 @@ const Navbar = () => {
     );
   };
   
-  export default Navbar;
